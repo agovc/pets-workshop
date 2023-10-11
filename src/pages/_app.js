@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
         ></img>
       </div>
       <h1>Adoption shelter</h1>
-      <div className="grid wrapper">
+      <div className="grid">
         <Component {...pageProps} />
       </div>
     </>

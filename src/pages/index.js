@@ -9,11 +9,12 @@ const Index = ({ pets }) => {
 
   return (
     <>
-
       {/* TODO: Display Hours component */}
       <Hours />
 
       {/* Create a card for each pet */}
+      
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
       {pets.map((pet) => (
         <div key={pet._id}>
           <div className="card">
@@ -53,6 +54,7 @@ const Index = ({ pets }) => {
           </div>
         </div>
       ))}
+      </div>
     </>
   );
 };
